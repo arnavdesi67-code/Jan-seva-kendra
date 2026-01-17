@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jan Seva Kendra</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: #0a3d62;
+  padding: 15px 30px;
+  color: white;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background: #074173;
+}
+
+/* DROPDOWN */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background: white;
+  top: 40px;
+  min-width: 220px;
+  z-index: 1000;
+}
+
+nav ul li ul li a {
+  color: #333;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #1e90ff, #0a3d62);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* SECTION */
+.section {
+  padding: 40px 20px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0a3d62;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #1e90ff;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Jan Seva Kendra</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+
+      <li><a href="#">Services</a>
+        <ul>
+          <li><a href="#aadhaar">Aadhaar Services</a></li>
+          <li><a href="#pan">PAN Card</a></li>
+          <li><a href="#certificate">Certificates</a></li>
+          <li><a href="#scholarship">Scholarships</a></li>
+          <li><a href="#printing">Printing Services</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#documents">Documents</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>All Government Services at One Place</h2>
+  <p>Aadhaar | PAN | Certificates | Scholarship | Online Forms</p>
+</section>
+
+<section class="section" id="aadhaar">
+  <h2>Aadhaar Services</h2>
+  <div class="cards">
+    <div class="card">New Aadhaar Enrollment</div>
+    <div class="card">Aadhaar Update (Name, Address, DOB)</div>
+    <div class="card">Aadhaar Print & PVC Card</div>
+  </div>
+</section>
+
+<section class="section" id="pan">
+  <h2>PAN Card Services</h2>
+  <div class="cards">
+    <div class="card">New PAN Card</div>
+    <div class="card">PAN Correction</div>
+    <div class="card">PAN Print</div>
+  </div>
+</section>
+
+<section class="section" id="certificate">
+  <h2>Certificates</h2>
+  <div class="cards">
+    <div class="card">Birth Certificate</div>
+    <div class="card">Death Certificate</div>
+    <div class="card">Income Certificate</div>
+    <div class="card">Caste Certificate</div>
+    <div class="card">Domicile Certificate</div>
+  </div>
+</section>
+
+<section class="section" id="scholarship">
+  <h2>Scholarship Services</h2>
+  <div class="cards">
+    <div class="card">Pre-Matric Scholarship</div>
+    <div class="card">Post-Matric Scholarship</div>
+    <div class="card">Minority Scholarship</div>
+  </div>
+</section>
+
+<section class="section" id="printing">
+  <h2>Printing Services</h2>
+  <div class="cards">
+    <div class="card">Black & White Print</div>
+    <div class="card">Color Print</div>
+    <div class="card">Photocopy</div>
+    <div class="card">Lamination & Scanning</div>
+  </div>
+</section>
+
+<section class="section" id="documents">
+  <h2>Required Documents</h2>
+  <div class="cards">
+    <div class="card">Aadhaar Card</div>
+    <div class="card">PAN Card</div>
+    <div class="card">Passport Size Photo</div>
+    <div class="card">Mobile Number</div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <h2>About Us</h2>
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    Jan Seva Kendra is a trusted digital service center providing all government
+    and online services at affordable cost with accuracy and reliability.
+  </p>
+</section>
+
+<section class="section contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>📍 Address: Your Village / City Name</p>
+  <p>📞 Phone: 9XXXXXXXXX</p>
+  <p>💬 WhatsApp Available</p>
+</section>
+
+<footer>
+  <p>© 2026 Jan Seva Kendra | Not affiliated with Government</p>
+</footer>
+
+</body>
+</html>
